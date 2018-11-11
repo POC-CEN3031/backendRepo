@@ -37,8 +37,13 @@ export class AuthService {
           // Create the user in firestore
           this._firestore.firestore.collection("users").doc(afUser.uid).set(
             {
+
               uid: afUser.uid,
-              company: company
+              company: company,
+              email: email,
+              fullName: fullName,
+              password: password
+
             }
           );
         });
@@ -77,7 +82,7 @@ export class AuthService {
 
   isLoggedIn() {
     if (this.userDetails == null) {
-      return false;
+      return '/auth/login';
     } else {
       return true;
     }

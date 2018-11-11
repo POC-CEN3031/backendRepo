@@ -30,6 +30,12 @@ import { ResetPasswordComponent } from './auth/reset-password/reset-password.com
 
 export const firebaseConfig = {
   // TODO fill api key
+    apiKey: "AIzaSyCPVOAoXnuihdl85gLpX2RjplXyBJ6WiDk",
+    authDomain: "pocs-92a3c.firebaseapp.com",
+    databaseURL: "https://pocs-92a3c.firebaseio.com",
+    projectId: "pocs-92a3c",
+    storageBucket: "pocs-92a3c.appspot.com",
+    messagingSenderId: "781369112382"
 };
 
 @NgModule({
